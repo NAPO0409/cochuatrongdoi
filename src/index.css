@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+/* ─────────────────────────────────────────────────────────────
+   MÀU SẮC VÀ CHỮ — đổi theo Design Brief ở đây, một chỗ duy nhất
+   Dùng trong code bằng class: bg-primary, text-primary, bg-accent,
+   bg-surface, text-ink, text-muted…
+   ───────────────────────────────────────────────────────────── */
+@theme {
+  --color-primary: #8e1b23;   /* Đỏ Phụng vụ */
+  --color-accent: #c99738;    /* Vàng Thánh */
+  --color-surface: #fbf9f5;   /* Kem ngà ấm */
+  --color-card: #ffffff;      /* Nền thẻ */
+  --color-ink: #152238;       /* Chữ Navy đậm */
+  --color-muted: #64748b;     /* Chữ phụ */
+  --font-sans: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+}
+
+/* ── Phần nền tảng — KHÔNG xóa ── */
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 17px;            /* chữ thân bài đủ lớn cho người lớn tuổi */
+  line-height: 1.55;
+  color: var(--color-ink);
+  background: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  /* safe area: chừa chỗ cho tai thỏ và thanh vuốt của điện thoại */
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Chừa chỗ cuối trang để nội dung không bị thanh tab che */
+.pb-tabbar { padding-bottom: calc(84px + env(safe-area-inset-bottom)); }
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }

@@ -1,0 +1,9 @@
+{
+  "name": "Có Chúa Trong Đời - TGP Sài Gòn",
+  "version": "1.0.0",
+  "description": "Cổng thông tin, Lời Chúa và suy tư Công giáo TGP Sài Gòn",
+  "icon": "logo.png",
+  "permissions": [],
+  "minSdkVersion": "1.0",
+  "entrypoint": "index.html"
+}
